@@ -5,6 +5,7 @@
 {% block content %}
     <div class="container">
         <form class="form-register" style="color:white" method="POST">
+            {{ form.hidden_tag() }}
             <h1 class="h3 mb-3 font-weight-normal text-center">Please Create your Account</h1>
             {{ form.username.label }}
             {{ form.username(class='form-control', placeholder='User Name') }}
